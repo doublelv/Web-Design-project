@@ -7,67 +7,10 @@
 <title>Homepage</title>
 <link rel = "icon" type = "image/ico" href="forza.png" />
 
+<link rel="stylesheet" href="css.css">
 
 
-<style>
-
-.container {
-  position: relative;
-  text-align: center;
-}
-
-
-.centered {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.centered2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-ul {
-  align: center;
-  list-style-type: none;
-  margin: 10px auto;
-  padding: 5px;
-  width: 330px;
-  background-color: #bed6e2;
-  border: 1px solid black;
-}
-
-li, a {
-  display: block;
-  color: #000;
-  padding: 25px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-li{
-border-bottom: 1px solid black;
-
-}
-
-li:last-child {
-  border-bottom: none;
-}
-
-li :hover {
-  background-color: #9fb9c6;
-  color: #000000;
-}
-
-
-</style>
 </head>
-
 
 
 <body>
@@ -78,14 +21,17 @@ li :hover {
 		<h1 align="center" position:relative; > <font size="60">FORZA TUNING GUIDE </font></h1>
 	</div>
 
-	<img src="za_zaitcheto.png" alt="Error wit picture" style="width:100%;">
+	<img src="za_zaitcheto.png" alt="Error with picture" style="width:100%;">
 
 	<div class="centered2">
-		<ul>
-		  <li><a href="street_racing.html">   <font size="5">STREET RACING TUNING</font>   </a></li>
-		  <li><a href="rally_racing.html">  <font size="5">RALLY RACING TUNING</font></a></li>
-		  <li><a href="cross_country_racing.html"> <font size="5">CROSS COUNTY RACING TUNING</font></a></li>
-		</ul>
+		<div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="street_racing.html">   <font size="4">STREET RACING TUNING</font>   </a>
+        <a href="rally_racing.html">  <font size="4">RALLY RACING TUNING</font></a>
+        <a href="cross_country_racing.html"> <font size="4">CROSS COUNTY RACING TUNING</font></a>
+      </div>
+    </div>
 	</div>
 </div>
 
