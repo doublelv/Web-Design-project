@@ -1,10 +1,27 @@
+body{
+  margin: 0px;
+}
 
 .container {
   position: relative;
   text-align: center;
   width: 100%;
   height: 100%;
-  resize: both;
+
+}
+
+.gif {
+  position: absolute;
+  top: 21%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video {
+  position: relative;
+  z-index: 0;
+  border: 1px solid black;
+  overflow: none;
 }
 
 .img {
@@ -12,6 +29,7 @@
   padding: 0%;
 }
 
+/* centered*/
 
 .centered {
   position: absolute;
@@ -26,6 +44,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.centered3 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered4 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* dropdown menu*/
 
 .dropbtn {
     background-color: rgb(11, 82, 182);
@@ -47,7 +80,6 @@
     background-color:  rgb(11, 82, 182);
     min-width: 400px;
     
-    z-index: 1;
 
   }
   
@@ -70,9 +102,84 @@
   }
 
 
-  .gif {
+
+ /*dropdown video*/
+  
+  .activevideo{
+    position: relative;
+
+  }
+
+  .activevideo video{
+    z-index: 0;
+  }
+
+  .activecontent{
+    display: none;
     position: absolute;
-    top: 21%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color:  rgb(11, 82, 182);
+    min-width: 400px;
+    z-index: 1;
+    right: 100%;
+    bottom: -200px;
+
+  }
+
+  .activecontent2{
+    display: none;
+    position: absolute;
+    background-color:  rgb(11, 82, 182);
+    min-width: 400px;
+    z-index: 1;
+    left: 100%;
+    bottom: -200px;
+
+  }
+
+
+  .activecontent p {
+    color: black;
+    padding: 4%;
+    text-decoration: none;
+    display: block;  
+  }
+  .activecontent2 p {
+    color: black;
+    padding: 4%;
+    text-decoration: none;
+    display: block;
+  }
+
+  .activevideo:hover .activecontent {
+    display: block;
+  }
+
+  .activevideo:hover .activecontent2 {
+    display: block;
+  }
+ 
+  .activecontent p:hover {
+    background-color: #f1f1f1
+  }
+  .activecontent2 p:hover {
+    background-color: #f1f1f1
+  }
+  
+
+
+
+
+  /*experimental*/
+  .overlay{
+    position: relative;
+    z-index: 1;
+  }
+
+
+
+  .paralax{
+  
+  position: fixed;
+  
+  height: 100%;
   }
