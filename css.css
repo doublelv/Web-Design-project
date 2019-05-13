@@ -40,7 +40,7 @@ body{
 
 .centered2 {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -53,10 +53,17 @@ body{
 }
 .centered4 {
   position: absolute;
-  top: 70%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.centered5 {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 /* dropdown menu*/
 
@@ -79,8 +86,6 @@ body{
     position: absolute;
     background-color:  rgb(11, 82, 182);
     min-width: 400px;
-    
-
   }
   
   .dropdown-content a {
@@ -110,18 +115,15 @@ body{
 
   }
 
-  .activevideo video{
-    z-index: 0;
-  }
 
   .activecontent{
     display: none;
     position: absolute;
     background-color:  rgb(11, 82, 182);
     min-width: 400px;
-    z-index: 1;
+    border: 1px solid black;
     right: 100%;
-    bottom: -200px;
+    bottom: -250px;
 
   }
 
@@ -130,10 +132,9 @@ body{
     position: absolute;
     background-color:  rgb(11, 82, 182);
     min-width: 400px;
-    z-index: 1;
+    border: 1px solid black;
     left: 100%;
-    bottom: -200px;
-
+    bottom: -250px;
   }
 
 
@@ -142,12 +143,15 @@ body{
     padding: 4%;
     text-decoration: none;
     display: block;  
+    margin: 0px;
   }
+
   .activecontent2 p {
     color: black;
     padding: 4%;
     text-decoration: none;
     display: block;
+    margin: 0px;
   }
 
   .activevideo:hover .activecontent {
@@ -165,9 +169,6 @@ body{
     background-color: #f1f1f1
   }
   
-
-
-
 
   /*experimental*/
   .overlay{
