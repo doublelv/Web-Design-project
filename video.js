@@ -19,3 +19,13 @@ $videojs2.on('mouseleave', function () {
     $videojs2.get(0).pause();
 });
 
+
+var $videojs3 = $('.videojs3');
+
+$videojs3.on('mouseenter', function () {
+    $videojs3.get(0).play();
+});
+
+$videojs3.on('mouseleave', function () {
+    $videojs3.get(0).pause();
+});
