@@ -124,7 +124,7 @@ body{
     border: 1px solid black;
     right: 100%;
     bottom: -250px;
-
+    object-fit: ;
   }
 
   .activecontent2{
