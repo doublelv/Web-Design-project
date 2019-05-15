@@ -133,7 +133,7 @@ body{
     min-width: 400px;
     border: 1px solid black;
     right: 100%;
-    bottom: -250px;
+    bottom: -190px;
   }
 
   .activecontent2{
@@ -143,8 +143,19 @@ body{
     min-width: 400px;
     border: 1px solid black;
     left: 100%;
-    bottom: -250px;
+    bottom: -190px;
   }
+
+  .activecontent3{
+    display: none;
+    position: absolute;
+    background-color:  rgb(11, 82, 182);
+    min-width: 400px;
+    border: 1px solid black;
+    right: 100%;
+    bottom: -170px;
+  }
+
 
 
   .activecontent p {
@@ -153,7 +164,7 @@ body{
     text-decoration: none;
     display: block;  
     margin: 0px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .activecontent2 p {
@@ -162,7 +173,16 @@ body{
     text-decoration: none;
     display: block;
     margin: 0px;
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .activecontent3 p {
+    color: black;
+    padding: 4%;
+    text-decoration: none;
+    display: block;  
+    margin: 0px;
+    font-size: 20px;
   }
 
   .activevideo:hover .activecontent {
@@ -172,6 +192,10 @@ body{
   .activevideo:hover .activecontent2 {
     display: block;
   }
+
+  .activevideo:hover .activecontent3 {
+    display: block;
+  }
  
   .activecontent p:hover {
     background-color: #f1f1f1
@@ -179,34 +203,24 @@ body{
   .activecontent2 p:hover {
     background-color: #f1f1f1
   }
+  .activecontent3 p:hover {
+    background-color: #f1f1f1
+  }
   
 
 
-  /*experimental*/
   .parallax_index {
-    /* The image used */
     background-image: url("index.png");
-  
-    /* Set a specific height */
     height: 100%;
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-
-
-  .parallax_street {
-    /* The image used */
+  .parallax_street {    
     background-image: url("streetracing.png");
-  
-    /* Set a specific height */
     height: 100%;
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -214,13 +228,8 @@ body{
   }
 
   .parallax_rally {
-    /* The image used */
-    background-image: url("rallyracing.png");
-  
-    /* Set a specific height */
+    background-image: url("rallyracing.png"); 
     height: 100%;
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -228,13 +237,8 @@ body{
   }
 
   .parallax_cc {
-    /* The image used */
     background-image: url("ccracing.png");
-  
-    /* Set a specific height */
     height: 100%;
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
